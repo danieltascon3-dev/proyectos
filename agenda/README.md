@@ -1,20 +1,31 @@
-# Agenda de Contactos en Python
+# Agenda de Contactos con Persistencia en Archivo
 
-Este proyecto implementa una agenda básica en Python que permite:
+Un sistema CRUD que gestiona contactos guardándolos permanentemente en un archivo de texto, demostrando manejo de E/S de archivos en Python.
 
-- Ingresar contactos con nombre y email.
-- Guardarlos en un archivo de texto (`Agenda.txt`).
-- Leer todos los contactos almacenados.
-- Buscar contactos por nombre.
+## Tecnologías Usadas
+- Python 3
+- Sistema de archivos (open/read/write)
+- Programación estructurada
+- Persistencia de datos en TXT
 
-## Requisitos
+## Funcionalidades
+- **Añadir contactos**: Nombre y email, guardados inmediatamente
+- **Listar todos**: Muestra todos los contactos guardados
+- **Búsqueda por nombre**: Encuentra contactos específicos
+- **Persistencia automática**: Los datos sobreviven al cerrar el programa
+- **Interfaz amigable**: Menú intuitivo en consola
 
-- Python 3.10 o superior
+## Qué Demuestra Este Proyecto
+- **Manejo de archivos**: Uso de `with open()` para lectura/escritura segura
+- **Persistencia de datos**: Los contactos no se pierden al cerrar el programa
+- **CRUD con almacenamiento**: Operaciones Create, Read sobre datos persistentes
+- **Manejo de errores**: Uso de `try-except` para archivos que no existen
 
-## Uso
-
-1. Clonar el repositorio o descargar el archivo `agenda.py`.
-2. Ejecutar el script desde la terminal:
-
+## Cómo Ejecutarlo
 ```bash
+# Clona el repositorio
+git clone https://github.com/tu-usuario/proyectos.git
+cd proyectos/agenda-contactos
+
+# Ejecuta el programa
 python agenda.py
